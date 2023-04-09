@@ -56,13 +56,13 @@ public class Campeonato {
                 m.ganhar(numeroGols1 - numeroGols2);
                 v.perder(numeroGols2 - numeroGols1);
 
-                String texto = "O " + m.nome + " ganho o partida contra o " + v.nome + " de " + numeroGols1 + " x " + numeroGols2;
+                String texto = "O " + m.nome + " ganhou o partida contra o " + v.nome + " de " + numeroGols1 + " x " + numeroGols2;
                 System.out.println(texto);
             }else if(numeroGols2 >numeroGols1){
                 v.ganhar(numeroGols2 - numeroGols1);
                 m.perder(numeroGols1 - numeroGols2);
 
-                String texto = "O " + v.nome + " ganho o partida contra o " + m.nome + " de " + numeroGols1 + " x " + numeroGols2;
+                String texto = "O " + v.nome + " ganhou o partida contra o " + m.nome + " de " + numeroGols1 + " x " + numeroGols2;
                 System.out.println(texto);
             }else {
                 m.empatar(numeroGols1 - numeroGols2);
