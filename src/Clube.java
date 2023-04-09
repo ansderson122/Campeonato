@@ -1,10 +1,10 @@
 public class Clube {
-	String nome;
-	int pontos;
-	int saldoGols;
+	final public String NOME;
+	private int pontos;
+	private int saldoGols;
 
     public Clube(String nomeClube){
-        this.nome = nomeClube;
+        this.NOME = nomeClube;
         this.pontos = 0;
         this.saldoGols = 0;
     }
@@ -23,11 +23,11 @@ public class Clube {
 		this.saldoGols += numeroGols ;
 	}
 
-    public int mostraPontos(){
+    public int getPontos(){
         return this.pontos;
     }
 
-    public int mostraSaldoGols(){
+    public int getSaldoGols(){
         return this.saldoGols;
     }
 
